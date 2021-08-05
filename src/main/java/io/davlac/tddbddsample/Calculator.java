@@ -10,4 +10,12 @@ public class Calculator {
         return num1 + num2;
     }
 
+    public static Integer substract(Integer num1, Integer num2) {
+        return num1 - num2;
+    }
+
+    public static Integer divide(Integer num1, Integer num2) {
+        return null;
+    }
+
 }

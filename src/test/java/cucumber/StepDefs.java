@@ -1,5 +1,6 @@
 package cucumber;
 
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,6 +24,18 @@ public class StepDefs {
     @When("we add them")
     public void weAddThem() {
         result = Calculator.add(number1, number2);
+    }
+
+    // Test not implemented
+    @When("we multiply them")
+    public void weMultiplyThem() {
+        throw new PendingException();
+    }
+
+    // Method not implemented
+    @When("we divide them")
+    public void weDivideThem() {
+        result = Calculator.divide(number1, number2);
     }
 
     @Then("I should get {int}")

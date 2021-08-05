@@ -1,5 +1,5 @@
 Feature: Add integers
-  Add numbers
+  Add numbers description
 
   Scenario Outline: Add a with b
     Given <a> and <b>
